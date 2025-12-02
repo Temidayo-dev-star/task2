@@ -188,9 +188,9 @@ margin: 0;
 /* Title */
 .product-card h3 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 200;
     color: #0A1A33;
-    margin: 0 0 20px 0;
+    margin: 20px 0;
 }
 
 /* Illustration */
@@ -585,18 +585,43 @@ margin:0;
 
 .container {
 width: 100%;
-max-width: 1300px;
+max-width: 1000px;
 margin: 0 auto;
 padding: 60px 40px;
+margin-top: 20px;
+
 }
 
 
-.header-section { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 50px; }
-.header-section h1 { font-size: 48px; font-weight: 700; line-height: 1.2; margin: 0; width: 50%; }
-.header-section p { font-size: 15px; line-height: 1.7; width: 45%; margin: 0; color: #333; }
+.header-section {
+     display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-bottom: 50px;
+ }
 
 
-.cards { display: flex; gap: 25px; overflow-x: auto; padding-bottom: 20px; }
+.header-section h1 { 
+    font-size: 48px; 
+    font-weight: 700;
+     line-height: 1.2; 
+     margin: 0; width: 50%; 
+    }
+
+.header-section p {
+     font-size: 15px; 
+     line-height: 1.7; 
+     width: 45%; margin: 0; 
+     color: #333; 
+    }
+
+
+.cards { 
+    display: flex; 
+    gap: 25px; 
+    overflow-x: auto; 
+    padding-bottom: 20px;
+ }
 
 
 .card {
@@ -662,6 +687,8 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         gap:40px; 
         align-items:flex-start; 
         padding:32px 0; 
+        border-bottom: 1px solid #e5e5e5;
+
 
     }
 
@@ -695,6 +722,7 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     height: 70px;
     font-family: 'Inter', sans-serif;
     margin-top: 4rem;
+
 }
 
 .store-btn {
@@ -739,37 +767,53 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 
 
     /* vertical divider */
-    .divider{
+    /*  .divider{
         width: 2px; 
         background:linear-gradient(#e9eef6,#ffffff); 
         margin:0 24px;
         height: 340px;
         
         
-    }
+    }*/
 
     /* right columns */
-    .links{display:flex; gap:34px; flex:2; justify-content:space-between}
-    .col{min-width:140px}
+    .links{
+        display:flex;
+         gap:34px;
+          flex:2; 
+          justify-content:space-between
+
+        }
+
+    .col{
+        min-width:140px
+    }
+
     .col h4{
         font-size:14px; 
         color:#274061; 
         margin-bottom:14px; 
-        font-weight:600
+        font-weight:500
     }
-    .col ul{
+    .col ul
+    {
         list-style:none
     }
-    .col li{
+
+    .col li
+    {
         margin:8px 0;
          font-size:14px; 
          color:#647488
         }
 
-    .contact{
+    .contact
+            {
         min-width:180px
     }
-    .contact li{
+
+    .contact li
+               {
         white-space:nowrap
     }
 
@@ -780,17 +824,20 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     padding: 40px 20px;
     background: white; /* light gradient feel */
     margin-bottom: 5%;
+    margin-top: 0;
+
     border-bottom: 1px solid #e5e5e5;
-
-
 }
 
 .footer-top {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    padding: 0 24px;
+
 
 }
 
@@ -798,16 +845,22 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
+
 }
+
 
 .footer-socials {
     display: flex;
     gap: 18px;
 
+
 }
 
-.footer-socials img {
+.footer-social a {
+  margin-right: 14px;
+}
+.footer-socials a img {
     width: 20px;
     height: 20px;
     opacity: 0.8;
@@ -825,7 +878,8 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     align-items: center;
     gap: 6px;
     letter-spacing: 0.3px;
-     margin-top: 40px;
+    margin-top: 10px;
+
 
 }
 
@@ -843,11 +897,14 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     padding: 14px 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-top: 0;
+
 }
 
 
 .sec-badge img {
-    height: 48px;
+     width: 40px;
+  height: auto;
 }
 
 .sec-text {
@@ -930,7 +987,7 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
        MAIN SECTION
     --------------------------------*/
     .main-section h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .sub-main-section {
@@ -970,7 +1027,7 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     }
 
     .product-card {
-        width: 90%;
+        width: 60%;
     }
 
     /* -------------------------------
@@ -997,6 +1054,8 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     .mid-card,
     .right-card {
         width: 100%;
+        font-size: small;
+        font-weight: 60;
 
     }
 
@@ -1020,6 +1079,7 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         margin-top: 20px;
+        margin-right: 200%;
     }
 
     .links .col h4 {
@@ -1032,8 +1092,52 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     }
 
     /* Social + address centered */
-    .footer-left {
-        text-align: center;
-        margin-left: auto;
-    }
+    .footer-top {
+    flex-direction: column;
+    align-items: flex-start;   /* LEFT aligned */
+    text-align: left;
+    gap: 8px;                 /* reduced spacing */
+    padding: 0;
+  }
+
+  .footer-left {
+    align-items: flex-start;   /* keep left */
+    gap: 20px;                 /* tighter */
+  }
+
+  .footer-socials {
+    justify-content: flex-start;
+    gap: 15px;                 /* smaller gap */
+  }
+
+  .footer-address {
+    margin-top: 0;             /* remove big space */
+    line-height: 1.35;
+    font-size: 14px;
+    max-width: 260px;
+
+  }
+
+  .sec-badge {
+    margin-top: 0;           /* just a small space */
+    order: 3;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 12px 16px;        /* tighter */
+    border-radius: 10px;
+
+    /* left aligned, not centered */
+    margin-left: 0;
+    margin-right: 0;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .sec-badge img {
+    width: 38px;               /* slightly smaller like mobile */
+  }
+
+  .footer-wrapper {
+    padding: 10px 10px 14px;   /* reduced top and bottom space */
+  }
 }
